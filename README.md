@@ -43,6 +43,10 @@ or pass it through the environment:
 export EVALS_CLI_TOKEN=<your API key>
 ```
 
+An exported `EVALS_CLI_TOKEN` wins over a stored login.
+
+Log out: `evals-cli auth logout --scheme deviceLogin` removes the local login; the API key it created stays valid until you revoke it in Settings → API Keys (named `evals-cli login <date>`).
+
 ## Examples
 
 ```sh
